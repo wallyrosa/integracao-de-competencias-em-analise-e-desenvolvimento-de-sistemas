@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./public/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./public/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./public/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./public/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./public/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./public/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./public/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./public/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./public/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./public/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./public/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./public/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./public/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./public/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./public/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./src/src/style/reset.css" />
+        <link rel="stylesheet" href="./src/style/index.css" />
+        <script src="./src/scripts/main.js"></script>
+        <title>O que é uma I.A</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <img
+            class="position-absolute w-full bg-image"
+            src="./src/assets/imgs/bg-elderly-learn-ia.png"
+            alt="idoso aprendendo sobre ia"
+        />
+        <div class="head justify-content-start align-items-center">
+            <button
+                class="text-capriola fw-bold fs-1 col-2 text-decoration-none bg-transparent border-0 text-highlight"
+                onclick="scrollToContent(event, 'welcome')"
+            >
+                <img src="./src/assets/imgs/ia-logo.svg" alt="logo do site" />
+            </button>
+            <button class="dropdown-button" onclick="showMenu()">
+                <img src="./src/assets/icons/angle-down-solid.svg" alt="menu" />
+            </button>
+            <div
+                class="dropdown-menu col-10 d-md-flex align-items-center justify-content-md-evenly"
+            >
+                <button
+                    class="text-capriola text-uppercase fw-bold nav-item bg-transparent border-0"
+                    onclick="scrollToContent(event, 'content')"
+                >
+                    O que é?
+                </button>
+                <button
+                    class="text-capriola text-uppercase fw-bold nav-item bg-transparent border-0"
+                    onclick="scrollToContent(event, 'content2')"
+                >
+                    Como funciona?
+                </button>
+                <button
+                    class="text-capriola text-uppercase fw-bold nav-item bg-transparent border-0"
+                    onclick="scrollToContent(event, 'content3')"
+                >
+                    Para que serve?
+                </button>
+                <button
+                    class="text-capriola text-uppercase fw-bold nav-item bg-transparent border-0"
+                    onclick="scrollToContent(event, 'content4')"
+                >
+                    Dia a dia
+                </button>
+                <button
+                    class="text-capriola text-uppercase fw-bold nav-item bg-transparent border-0"
+                    onclick="scrollToContent(event, 'content5')"
+                >
+                    Utilidade
+                </button>
+            </div>
+        </div>
+        <div class="main">
+            <section
+                class="welcome d-flex flex-lg-row flex-sm-column align-items-center bg-transparent"
+                id="welcome"
+            >
+                <div class="col d-flex flex-column gap-3">
+                    <span class="subtitle text-highlight">APRENDENDO</span>
+                    <span class="title col-6">Inteligência Artificial</span>
+                    <span class="col-lg-5"
+                        >Aqui vamos aprender um pouco de como as I.As funcionam,
+                        de uma maneira mais descomplicada.</span
+                    >
+                    <button
+                        class="rounded-5 w-50 btn-outline mt-4"
+                        onclick="scrollToContent(event, 'content')"
+                    >
+                        Vamos começar
+                    </button>
+                </div>
+                <div class="d-flex flex-column"></div>
+            </section>
+            <section class="content justify-content-center gap-5" id="content">
+                <span
+                    class="text-center fs-1 align-self-center fw-bold text-uppercase text-capriola"
+                    >O que é
+                    <span class="text-highlight">Inteligência Artificial</span>
+                    (IA)?</span
+                >
+                <div class="d-flex flex-column align-items-center gap-4">
+                    <img
+                        class="img-fluid"
+                        src="./src/assets/imgs/ia-and-humans.jpg"
+                        alt="apertando a mão de um robô"
+                    />
+                    <span class="fs-3 lh-sm text-justify fw-lighter">
+                        A
+                        <b class="fw-bolder">Inteligência Artificial</b>, ou IA,
+                        é como um ajudante muito inteligente que foi criado por
+                        cientistas e engenheiros. Diferente de uma pessoa, a IA
+                        não tem corpo ou sentimentos, mas
+                        <b class="fw-bolder">ela consegue pensar</b> e tomar
+                        decisões como se fosse um
+                        <b class="fw-bolder">ser humano.</b> Ela funciona dentro
+                        de máquinas e aparelhos, como celulares, computadores e
+                        até tratores modernos.
+                        <p class="fs-3 lh-sm">
+                            Imagine que você tem um ajudante que sempre sabe a
+                            melhor hora de fazer algo e
+                            <b class="fw-bolder">consegue aprender</b> com os
+                            erros para melhorar no futuro. É assim que a IA
+                            funciona: ela aprende com o que
+                            <b class="fw-bolder"
+                                >você <b class="text-highlight">ensina</b> ou
+                                com o que já
+                                <b class="text-highlight">existe</b></b
+                            >
+                            e usa isso para fazer o trabalho melhor.
+                        </p>
+                    </span>
+                </div>
+            </section>
+            <section class="content justify-content-center gap-5" id="content2">
+                <span
+                    class="text-center fs-1 align-self-center fw-bold text-uppercase text-capriola"
+                    >Como funciona a
+                    <span class="text-highlight">Inteligência Artificial</span
+                    >?</span
+                >
+                <div class="d-flex flex-column align-items-center gap-4">
+                    <img
+                        class="img-fluid"
+                        src="./src/assets/imgs/elderly-thinking.png"
+                        alt="idoso pensativo"
+                    />
+                    <span class="fs-3 lh-sm text-justify fw-lighter">
+                        A IA funciona como se tivesse
+                        <b class="fw-bolder">uma mente artificial.</b> Ela
+                        observa, pensa sobre o que está acontecendo e decide o
+                        que fazer, tudo isso muito rápido. Para isso, ela
+                        precisa de muitas informações.
+                        <b class="fw-bolder">Quanto mais ela "vê"</b> e aprende,
+                        melhor ela fica. Por exemplo, pense em uma máquina que
+                        analisa a plantação. Ela pode observar o solo, o clima e
+                        a umidade e, com isso, decidir se é hora de regar ou
+                        esperar. Tudo isso sem que você precise ensinar
+                        diretamente, porque ela
+                        <b class="fw-bolder"
+                            ><b class="text-highlight">aprende</b> com os dados
+                            que já tem</b
+                        >. Se você já viu um celular que responde quando você
+                        pergunta algo, como “Que horas são?”, essa é a IA
+                        funcionando. Ela entende o que você disse, busca a
+                        informação e responde rapidamente, quase como
+                        <b class="fw-bolder">um amigo que sabe de tudo.</b>
+                    </span>
+                </div>
+            </section>
+            <section class="content justify-content-center gap-5" id="content3">
+                <span
+                    class="text-center fs-1 align-self-center fw-bold text-uppercase text-capriola"
+                    >Para que serve a
+                    <span class="text-highlight">Inteligência Artificial</span
+                    >?</span
+                >
+                <div class="d-flex flex-column align-items-center gap-4">
+                    <span class="fs-3 lh-sm text-justify fw-lighter">
+                        A IA foi feita para ajudar as pessoas em
+                        <b class="fw-bolder">tarefas que podem ser difíceis</b>,
+                        cansativas ou demoradas. Ela está presente em muitos
+                        lugares e pode servir para diferentes finalidades. Por
+                        exemplo:
+                    </span>
+                    <div class="d-flex">
+                        <div class="topic"></div>
+                        <ul class="fs-3 lh-sm fw-light">
+                            <b class="text-highlight">No trabalho:</b>
+                            Organiza tarefas, ajuda a lembrar de coisas
+                            importantes ou até faz cálculos complicados.
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <div class="topic"></div>
+                        <ul class="fs-3 lh-sm fw-light">
+                            <b class="text-highlight">Na lavoura:</b>
+                            Algumas máquinas modernas conseguem identificar a
+                            hora certa para plantar ou regar, e até reconhecer
+                            doenças nas plantas.
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <div class="topic"></div>
+                        <ul class="fs-3 lh-sm fw-light">
+                            <b class="text-highlight">No dia a dia:</b>
+                            Responde perguntas no celular, encontra caminhos
+                            mais rápidos em aplicativos ou organiza o que
+                            precisa ser feito no dia.
+                        </ul>
+                    </div>
+                    <span class="fs-3 lh-sm text-justify fw-lighter"
+                        >Para quem vive na roça, a IA pode ser uma grande
+                        parceira. Por exemplo, imagine uma
+                        <b class="fw-bolder">máquina que analisa</b> o solo e
+                        avisa quando precisa de mais água ou quando o adubo não
+                        está funcionando direito. Assim, ela ajuda você a cuidar
+                        melhor da terra, economizando tempo e recursos.</span
+                    >
+                </div>
+            </section>
+            <section class="content justify-content-center gap-5" id="content4">
+                <span
+                    class="text-center fs-1 align-self-center fw-bold text-uppercase text-capriola"
+                    >Onde encontramos a <b class="text-highlight">IA</b> no dia
+                    a dia?</span
+                >
+                <div class="d-flex flex-column align-items-center gap-4">
+                    <span class="fs-3 lh-sm text-justify fw-lighter">
+                        Mesmo que você não perceba, a IA já está em muitos
+                        lugares ao nosso redor:
+                    </span>
+                    <div class="d-flex">
+                        <div class="topic"></div>
+                        <ul class="fs-3 lh-sm fw-light">
+                            <b class="text-highlight">Nos celulares:</b>
+                            Quando você fala algo e o celular responde ou quando
+                            ele sugere coisas que você pode gostar.
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <div class="topic"></div>
+                        <ul class="fs-3 lh-sm fw-light">
+                            <b class="text-highlight"
+                                >Nas máquinas agrícolas:</b
+                            >
+                            Algumas colheitadeiras e tratores modernos usam IA
+                            para otimizar o trabalho, fazendo com que você colha
+                            mais em menos tempo.
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <div class="topic"></div>
+                        <ul class="fs-3 lh-sm fw-light">
+                            <b class="text-highlight">Nos mercados:</b>
+                            Sistemas de IA ajudam a organizar produtos nas
+                            prateleiras e até a prever o que os clientes vão
+                            comprar mais.
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <div class="topic"></div>
+                        <ul class="fs-3 lh-sm fw-light">
+                            <b class="text-highlight">Na cidade:</b>
+                            Aplicativos de trânsito usam IA para mostrar o
+                            caminho mais rápido e evitar engarrafamentos.
+                        </ul>
+                    </div>
+                    <span class="fs-3 lh-sm text-justify fw-lighter"
+                        >Se você já ouviu falar de
+                        <b class="fw-bolder">carros que dirigem sozinhos</b>,
+                        essa também é uma aplicação da IA. Ela analisa o
+                        caminho, identifica obstáculos e toma decisões para
+                        levar as pessoas com segurança.</span
+                    >
+                </div>
+            </section>
+            <section class="content justify-content-center gap-5" id="content5">
+                <span
+                    class="text-center fs-1 align-self-center fw-bold text-uppercase text-capriola"
+                    >Por que a
+                    <b class="text-highlight">Inteligência Artificial</b> é
+                    útil?
+                </span>
+                <div class="d-flex flex-column align-items-center gap-4">
+                    <img
+                        class="img-fluid"
+                        src="./src/assets/imgs/elderlys-use-notebook.jpg"
+                        alt="idoso usando um notebook"
+                    />
+                    <span class="fs-3 lh-sm text-justify fw-lighter">
+                        A <b class="fw-bolder">IA é útil</b> porque pode fazer
+                        coisas que seriam difíceis ou demoradas para as pessoas.
+                        Ela economiza
+                        <b class="fw-bolder"
+                            >tempo, trabalha mais rápido e ajuda a tomar
+                            decisões mais precisas</b
+                        >. Além disso, a
+                        <b class="fw-bolder">IA não se cansa</b>. Ela pode
+                        trabalhar o dia todo, sem parar, e ainda continuar
+                        aprendendo para melhorar. Por exemplo, imagine que você
+                        tenha uma máquina na sua roça que analise o clima e
+                        sugira a melhor hora para plantar. Essa máquina pode
+                        evitar desperdícios e ajudar você a colher mais. No dia
+                        a dia, um celular com IA pode lembrar você de
+                        compromissos importantes ou encontrar receitas
+                        diferentes para os ingredientes que você tem em casa.
+                    </span>
+                </div>
+            </section>
+            <section class="content justify-content-center gap-5" id="content6">
+                <span
+                    class="text-center fs-1 align-self-center fw-bold text-uppercase text-capriola"
+                    >A <b class="text-highlight">IA</b> vai substituir as
+                    pessoas?
+                </span>
+                <div class="d-flex flex-column align-items-center gap-4">
+                    <img
+                        class="img-fluid"
+                        src="./src/assets/imgs/elderly-worried.jpg"
+                        alt="idoso preocupado"
+                    />
+                    <span class="fs-3 lh-sm text-justify fw-lighter">
+                        Não, a <b class="fw-bolder">IA</b> não foi criada para
+                        substituir as pessoas, mas para
+                        <b class="fw-bolder text-highlight">ajudá-las</b>. Ela é
+                        como uma ferramenta moderna que torna o trabalho mais
+                        leve e eficiente. No campo, por exemplo, a IA não
+                        elimina o conhecimento do agricultor. Pelo contrário,
+                        ela <b class="fw-bolder">trabalha junto com você</b>,
+                        trazendo informações que antes eram difíceis de
+                        conseguir. Imagine que você tem uma máquina que aprende
+                        com a experiência e que faz recomendações sobre o solo
+                        ou a plantação. Isso não significa que você deixa de ser
+                        importante; significa que agora
+                        <b class="fw-bolder"
+                            >você pode trabalhar com mais precisão</b
+                        >
+                        e gastar menos esforço. Com a IA, você ganha tempo para
+                        cuidar de outras coisas importantes na sua vida.
+                    </span>
+                </div>
+            </section>
+            <section class="content justify-content-center gap-5" id="content7">
+                <span
+                    class="text-center fs-1 align-self-center fw-bold text-uppercase text-capriola"
+                    >Vamos usar?
+                </span>
+                <div class="d-flex flex-column align-items-center gap-4">
+                    <img
+                        class="img-fluid"
+                        src="./src/assets/imgs/elderlys-use-tecnologia.png"
+                        alt="idosos usando tecnologia"
+                    />
+                    <span class="fs-3 lh-sm text-justify fw-lighter">
+                        A
+                        <b class="fw-bolder text-highlight"
+                            >Inteligência Artificial</b
+                        >
+                        é uma ferramenta poderosa criada para facilitar a vida
+                        das pessoas. Ela
+                        <b class="fw-bolder"
+                            >não substitui o conhecimento humano</b
+                        >, mas trabalha ao nosso lado, trazendo eficiência e
+                        praticidade para tarefas do dia a dia, seja no campo, no
+                        <b class="fw-bolder">trabalho</b> ou
+                        <b class="fw-bolder">em casa</b>. Ao entender e aprender
+                        com as situações, a IA se torna uma grande aliada,
+                        ajudando a economizar tempo, tomar decisões mais
+                        precisas e enfrentar desafios com mais facilidade. No
+                        fim, a IA não é algo distante ou complicado, mas uma
+                        tecnologia feita para
+                        <b class="fw-bolder"
+                            >simplificar e melhorar a nossa vida</b
+                        >.
+                    </span>
+                </div>
+            </section>
+            <section
+                class="d-flex flex-column justify-content-between px-0 gap-4"
+                id="content8"
+            >
+                <div class="text-center d-flex flex-column align-items-center gap-4">
+                    <span
+                        class="fs-1 align-self-center fw-bold text-uppercase text-capriola"
+                        >Obrigado por chegar até aqui!
+                    </span>
+                </div>
+                <img
+                    class="img-fluid"
+                    src="./src/assets/imgs/elderlys-smiling.jpg"
+                    alt="idoso sorrindo"
+                />
+                <footer>
+                    <p class="fw-normal fs-2">Criado por</p>
+                    <p class="fw-bolder fs-1">Wallysson da Silva Rosa</p>
+                </footer>
+            </section>
+        </div>
+    </body>
+</html>
