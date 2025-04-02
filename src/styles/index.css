@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Capriola&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html, body {
     scroll-behavior: smooth;
@@ -9,10 +7,12 @@ html, body {
 }
 
 body {
-    --bg-primary: #1D1D1F;
-    --text-primary: #E1E1E1;
-    --text-secodary: #A8A8A8;
-    --highlight-color: #FFB365;
+    --bg-primary: #2a3143;
+    --text-primary: #D4E4F7;
+    --text-secondary: #9BB8D3;
+    --highlight-color: #4DA8DA;
+    --highlight-color-hover: #3B8DBC;
+    --bg-secondary: #262d3d;
 }
 
 body {
@@ -77,10 +77,10 @@ section {
     font-weight: 200;
 }
 .text-capriola {
-    font-family: 'Capriola', sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 .title {
-    font-family: 'Capriola', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 6rem;
 }
 .btn-outline {
@@ -147,6 +147,16 @@ section {
     height: auto;
     fill: var(--bg-primary)
 }
+.bg-highlight-color {
+    background-color: var(--highlight-color);
+    color: var(--bg-primary);
+    text-decoration: none;
+}
+.bg-highlight-color:hover {
+    background-color: var(--highlight-color-hover);
+    color: var(--bg-primary);
+    text-decoration: none;
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -154,8 +164,8 @@ footer {
     align-items: center;
     width: 100%;
     height: 20rem;
-    background-color: var(--highlight-color);
-    color: var(--bg-primary);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
 }
 @media screen and (max-width: 1050px)  {
     .head {
